@@ -45,6 +45,6 @@ We still can't predict changes in travel flow, but at least we have an estimate 
 
 ## The actual methodology
 
-This site explains how travel times are actually predicted: [http://ops.fhwa.dot.gov/publications/tt_reliability/TTR_Report.htm]
+[This site](http://ops.fhwa.dot.gov/publications/tt_reliability/TTR_Report.htm#Whatmeasures) explains how travel times are actually predicted. 
 
 It turns out that it is nothing like the methods I proposed.  More than likely it is simply not feasible to measure traffic with the granularity that I propose, so historical models are more effective.  It will be interesting to see how increased data collection changes these methods, and how it impacts prediction.
