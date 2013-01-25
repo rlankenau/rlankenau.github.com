@@ -27,7 +27,7 @@ This suffers from a critical issue.  The measurement only tells you how long it 
 
 * For all cars C passing Point A at time t<sub>C0</sub>
 ** Measure the time until car C passes Point B
-* Extrapolate to predict the travel time of Car X at time t<sub>X0<sub>
+* Extrapolate to predict the travel time of Car X at time t<sub>X0</sub>
 
 This, however, seems extremely subject to recent changes.  Your most recent measurement is still far in the past.  Using a local regression, we don't have the data points that would lend the most credibility to our prediction, so our model is probably a bad predictor.
 
@@ -45,6 +45,6 @@ We still can't predict changes in travel flow, but at least we have an estimate 
 
 ## The actual methodology
 
-This site explains how travel times are actually predicted: http://ops.fhwa.dot.gov/publications/tt_reliability/TTR_Report.htm
+This site explains how travel times are actually predicted: [http://ops.fhwa.dot.gov/publications/tt_reliability/TTR_Report.htm]
 
 It turns out that it is nothing like the methods I proposed.  More than likely it is simply not feasible to measure traffic with the granularity that I propose, so historical models are more effective.  It will be interesting to see how increased data collection changes these methods, and how it impacts prediction.
