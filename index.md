@@ -7,8 +7,10 @@ title: ~rlankenau/
 <ul class="posts">
   {% for post in site.posts %}
     <li>
-	<span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
-	<div>{{ post.content | truncatewords:200</div>
+	<H2>{{ post.title }}</H2> 
+	<div>{{ post.date | date_to_string }}</div>
+	<div>{{ post.content | truncatewords:200 }}</div>
+	<div><a href="{{ BASE_PATH }}{{ post.url }}">Read more</a></div>
 	</li>
   {% endfor %}
 </ul>
