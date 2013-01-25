@@ -2,6 +2,11 @@
 html, body {
   background-color: #eee;
 }
+
+ul.posts {
+	list-style-type: none;	
+}
+
 .navbar {
   margin-bottom: 0;
 }
