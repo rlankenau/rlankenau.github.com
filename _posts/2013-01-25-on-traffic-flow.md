@@ -7,6 +7,8 @@ tags: [musings]
 ---
 {% include JB/setup %}
 
+* * *
+
 > "29 minutes from the Aurora Toll Plaza to the North-South Tollway."  
 
 * * * 
@@ -26,7 +28,7 @@ This suffers from a critical issue.  The measurement only tells you how long it 
 ## Extrapolation
 
 * For all cars C passing Point A at time t<sub>C0</sub>
-  * Measure the time until car C passes Point B
+* Measure the time until car C passes Point B
 * Extrapolate to predict the travel time of Car X at time t<sub>X0</sub>
 
 This, however, seems extremely subject to recent changes.  Your most recent measurement is still far in the past.  Using a local regression, we don't have the data points that would lend the most credibility to our prediction, so our model is probably a bad predictor.
