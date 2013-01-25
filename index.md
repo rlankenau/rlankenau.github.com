@@ -14,14 +14,35 @@ title: ~rlankenau/
 	</li>
   {% endfor %}
 </ul>
-<!-- Pagination links -->
 <div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="/page{{paginator.previous_page}}" class="previous">Newer Posts</a>
-  {% endif %}
-  <span class="page_number ">Page: {{paginator.page}} of {{paginator.total_pages}}</span>
-  {% if paginator.next_page %}
-    <a href="/page{{paginator.next_page}}" class="next ">Older Posts</a>
-  {% endif %}
+<ul>
+{% if paginator.previous_page %}
+{% if paginator.previous_page == 1 %}
+<li class="disabled"><a href="#">&laquo;</a></li>
+{% else %}
+<li><a href="/page{{paginator.previous_page}}">&laquo;</a></li>
+{% endif %}
+{% endif %}
+ 
+{% if paginator.page == 1 %}
+<li class="disabled"><a href="#">1</a></li>
+{% else %}
+<li><a href="/">1</a></li>
+{% endif %}
+ 
+{% for count in (2..paginator.total_pages) %}
+<li class="page">
+{% if count == paginator.page %}
+<li class="active"><a href="#">{{count}}</a></li>
+{% else %}
+<li><a href="/page{{count}}">{{count}}</a></li>
+{% endif %}
+{% endfor %}
+ 
+{% if paginator.next_page %}
+<li class="active"><a href="/page{{paginator.next_page}}">&raquo;</a></li>
+{% else %}
+<li class="disabled"><a href="#">&raquo;</a></li>
+{% endif %}
+</ul>
 </div>
-
