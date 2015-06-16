@@ -1,0 +1,12 @@
+BEGIN:VCARD
+VERSION:4.0
+N:Lankenau;Russell;;;
+FN:Russell Lankenau
+PHOTO;MEDIATYPE=image/jpeg:http://russ.lankenau.us/headshot.jpg
+TEL;TYPE=cell,voice;VALUE=uri:tel:+1-630-596-7141
+EMAIL:rlankenau@gmail.com
+URL:http://russ.lankenau.us
+REV:20150615T165200Z
+NICKNAME:Russ
+UID:urn:uuid:9305D428-D7A7-41D0-99D1-FA4658A6B0CF
+END:VCARD
