@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Personal landing page for Russ Lankenau">
+
+	<title>Russ Lankenau</title>
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+  
+	<!--[if lte IE 8]>
+		<link rel="stylesheet" href="/css/layouts/side-menu-old-ie.css">
+	<![endif]-->
+
+	<!--[if gt IE 8]><!-->
+		<link rel="stylesheet" href="/css/layouts/side-menu.css">
+	<!--<![endif]-->
+    
+	<!--[if lt IE 9]>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
+	<![endif]-->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-64163721-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script>
+        $(function(){$("#menu").load("menu.html");});
+    </script>
+</head>
+<body>
+<div id="layout">
+    <!-- Menu toggle -->
+    <a href="#menu" id="menuLink" class="menu-link">
+        <!-- Hamburger icon -->
+        <span></span>
+    </a>
+
+    <div id="menu">
+    </div>
+
+    <div id="main">
+        <div class="header">
+            <h1>Russ Lankenau</h1>
+        </div>
+
+        <div class="content">
+            <h2 class="content-subhead">Time-lapse photography on the Raspberry Pi</h2>
+            <p>
+		The Raspberry Pi camera is pretty easy to use, and the still photo quality is high enough to do better than 1080p, so it is a great platform for time-lapse photography.  If all you want to do is set it up in one place and take photos, there is a really good tutorial here: http://computers.tutsplus.com/tutorials/creating-time-lapse-photography-with-a-raspberry-pi--cms-20794
+            </p>
+            <p>
+		I had a slightly different idea of what I wanted to use the camera for.  I do a lot of electronics projects, and I don't really want to log in and kick off a time-lapse session every time I start a project.  I'd rather be able to simply plug the Pi in, hit a button, and have it start recording.  I'd especially like to be able to do this without any network access, in case I'm recording at an event.  So, with that in mind, I came up with the following list of requirements:
+            </p>
+		<ul>
+			<li>Only one wired connection, for power.</li>
+			<li>A stable platform so I can set it up on a table and get a good shot</li>
+			<li>An indicator to tell me when it is actually taking photos</li>
+			<li>A way to dump the photos back to a computer with more storage after the fact</li>
+		</ul>
+        </div>
+    </div>
+</div>
+<script src="/js/ui.js"></script>
+</body>
+</html>
